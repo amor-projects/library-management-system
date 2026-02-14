@@ -179,7 +179,7 @@ _**Important design decision:**_
 #### ✨ Built with Passion
 <div style="display: flex; place-content: center">
 Crafted with 💖  by 
- <a href="https://github.com/ZephyrAmmor"><img style="margin-left: 8px" alt="Zephyr Ammor Github Account" src="https://img.shields.io/badge/GitHub-ZephyrAmmor-181717?style=for-the-badge&logo=github&logoColor=white)" /></a>
+ <a href="https://github.com/ZephyrAmmor"><img style="margin-left: 8px; display: block" alt="Zephyr Ammor Github Account" src="https://img.shields.io/badge/GitHub-ZephyrAmmor-181717?style=for-the-badge&logo=github&logoColor=white)" /></a>
 </div>
 
 > **_A NEW BEGINNING_**
