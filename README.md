@@ -1,15 +1,21 @@
-## LIBRARY MANAGEMENT SYSTEM
+# 📚 Library Management System
 
-### University Library Management System (Console-Based)
+![Build](https://img.shields.io/badge/Build-Console%20App-2EA44F?style=for-the-badge&logo=gradle&logoColor=white)
+![Language](https://img.shields.io/badge/Language-Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-3FB950?style=for-the-badge&logo=githubactions&logoColor=white)
+![Focus](https://img.shields.io/badge/Focus-OOP%20Design-F59E0B?style=for-the-badge&logo=codacy&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-64748B?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
 
-### Description
-A university-level library system that manages books, members, borrowing rules, reservations, and fines. The system models realistic academic policies with clearly defined roles and book categories.
+## 🎓 University Library Management System 
 
-> You are building a mid-sized university library, not a national archive.
+## ✨ Description
+I am building a university-level library system that manages books, members, borrowing rules, reservations, and fines. It models realistic academic policies with clearly defined roles and book categories.
+
+> I am building a mid-sized university library, not a national archive.
 
 ---
 
-### USER ROLES (Exactly 3)
+## 👥 User Roles (Exactly 3)
 
 1. Student
 2. Faculty
@@ -17,22 +23,22 @@ A university-level library system that manages books, members, borrowing rules, 
 
 That’s it. No admin role as a borrower. Admin is a system operator, not a borrowing entity.
 
-### Borrowing Rules:
+## 📦 Borrowing Rules
 
-#### Student
+### Student
 - Max 5 active borrowings
 - Loan duration: 14 days
 - Fine: $1 per day overdue
 - Can reserve books
 
-#### Faculty
+### Faculty
 - Max 10 active borrowings
 - Loan duration: 30 days
 - Fine: $0.50 per day overdue
 - Can reserve books
 - Can borrow reference books (in-library use only, 6-hour limit)
 
-#### Guest
+### Guest
 - Max 2 active borrowings
 - Loan duration: 7 days
 - Fine: $2 per day overdue
@@ -43,14 +49,14 @@ That’s it. No admin role as a borrower. Admin is a system operator, not a borr
 
 ---
 
-### BOOK TYPES (Exactly 4)
+## 📚 Book Types (Exactly 4)
 
 1. PhysicalBook
 2. EBook
 3. AudioBook
 4. ReferenceBook
 
-#### Definitions:
+## 🧭 Definitions
 
 **PhysicalBook**
 - Has limited copies
@@ -81,7 +87,7 @@ _**Important design decision:**_
 
 ---
 
-### CORE FEATURES (Mandatory)
+## ✅ Core Features (Mandatory)
 
 - Add/remove books
 - Register/remove members
@@ -96,25 +102,25 @@ _**Important design decision:**_
 
 ---
 
-### STATE RULES (No ambiguity)
+## 🧩 State Rules (No ambiguity)
 
-#### PhysicalBook states:
+### PhysicalBook states
 - Available → Borrowed → Available
 - Available → Reserved → Borrowed
 - Borrowed → Reserved (queue exists)
 
-#### EBook & AudioBook states:
+### EBook & AudioBook states
 - Always Available
 - Borrowed status tracked per user, not per copy
 
-#### ReferenceBook states:
+### ReferenceBook states
 - Available → InLibraryUse → Available
 
 > No other states allowed.
 
 ---
 
-### RESERVATION RULES
+## 🗓️ Reservation Rules
 
 - Only PhysicalBook can be reserved
 - FIFO queue
@@ -123,7 +129,7 @@ _**Important design decision:**_
 
 ---
 
-### FINE RULES
+## 💸 Fine Rules
 
 - Fine = (CurrentDate - DueDate) × RoleRate
 - No compound logic.
@@ -133,7 +139,7 @@ _**Important design decision:**_
 
 ---
 
-### SUCCESS CRITERIA
+## 🏁 Success Criteria
 
 **The system is successful if:**
 
@@ -146,7 +152,7 @@ _**Important design decision:**_
 
 ---
 
-### WHAT YOU ARE NOT BUILDING
+## 🚫 What I Am Not Building
 
 - GUI
 - Database
@@ -155,11 +161,11 @@ _**Important design decision:**_
 - Payment gateway
 - Search engine ranking
 
-> Stay focused.
+> I stay focused.
 
 ---
 
-**If you build exactly this specification, you will encounter:**
+**If I build exactly this specification, I will encounter:**
 
 - Inheritance decisions
 - Polymorphism decisions
@@ -167,5 +173,14 @@ _**Important design decision:**_
 - Rule encapsulation
 - Separation of concerns
 - Basic persistence architecture
+
+---
+
+#### ✨ Built with Passion
+<div style="display: flex; place-content: center">
+Crafted with 💖  by 
+ <a href="https://github.com/ZephyrAmmor"><img style="margin-left: 8px" alt="Zephyr Ammor Github Account" src="https://img.shields.io/badge/GitHub-ZephyrAmmor-181717?style=for-the-badge&logo=github&logoColor=white)" /></a>
+</div>
+
 > **_A NEW BEGINNING_**
 ---
